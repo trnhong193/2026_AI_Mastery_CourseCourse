@@ -2,3 +2,6 @@ ipykernel
 torch
 torchvision
 tensorflow
+numpy 
+matplotlib
+scipy
