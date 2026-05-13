@@ -32,3 +32,5 @@ axes[1].imshow(egde_image, cmap = "gray")
 axes[1].set_title("Edged Detection Image")
 axes[2].imshow(blur_image, cmap = "gray")
 axes[2].set_title("Blurred Image")
+
+plt.show()
