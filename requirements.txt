@@ -5,3 +5,8 @@ tensorflow
 numpy 
 matplotlib
 scipy
+
+# 24
+langchain
+transformers 
+datasets

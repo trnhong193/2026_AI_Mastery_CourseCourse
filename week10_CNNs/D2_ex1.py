@@ -21,14 +21,16 @@ blur_kernel = np.array([
 ])/9
 
 # Apply convolution
-egde_image = convolve(image, edge_kernel)
+edge_image = convolve(image, edge_kernel)
 blur_image = convolve(image, blur_kernel)
 
 # Visualize original and filterd images 
+## Create subplots
 fig, axes = plt.subplots(1, 3, figsize = (12,4))
+
 axes[0].imshow(image, cmap="gray")
 axes[0].set_title("Original Image")
-axes[1].imshow(egde_image, cmap = "gray")
+axes[1].imshow(edge_image, cmap = "gray")
 axes[1].set_title("Edged Detection Image")
 axes[2].imshow(blur_image, cmap = "gray")
 axes[2].set_title("Blurred Image")
